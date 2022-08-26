@@ -331,16 +331,20 @@ footer ul li a:hover {
 }
 
 /* Inner Pages */
-.bg-falcon-9 {
-    background-image: url(../img/falcon-9.webp);
+.bg-colony {
+    background-image: url(../img/colony.jpeg);
 }
 
-.bg-falcon-heavy {
-    background-image: url(../img/falcon-heavy.webp);
+.bg-corporate {
+    background-image: url(../img/corporate.jpg);
 }
 
-.bg-dragon {
-    background-image: url(../img/dragon.webp);
+.bg-orbital {
+    background-image: url(../img/orbital.jpg);
+}
+
+.bg-deepSpace {
+    background-image: url(../img/deepSpace.webp);
 }
 
 .section-animate {
