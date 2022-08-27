@@ -2,6 +2,8 @@ const btn = document.getElementById('menu-btn');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu');
 const counters = document.querySelectorAll('.counter');
+const form = document.getElementById('login-form');
+
 let scrollStarted = false;
 
 btn.addEventListener('click', navToggle);
@@ -58,3 +60,14 @@ function countUp() {
 function reset() {
     counters.forEach((counter) => (counter.innerHTML = '0'));
 }
+
+form.addEventListener('submit', (e) => {
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+    if (document.cookie === '') {
+        document.cookie = `user=${username}`;
+        document.cookie = "password=***********";
+        document.cookie = "admin=false";
+    }
+    e.preventDefault();
+});
