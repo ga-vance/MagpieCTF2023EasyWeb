@@ -373,6 +373,11 @@ footer ul li a:hover {
     animation-fill-mode: both;
 }
 
+.section-inner-center h6 {
+    font-size: 30px;
+    text-transform: none;
+}
+
 /* Stats */
 .stats {
     max-width: 960px;
@@ -403,7 +408,7 @@ footer ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 150px;
+    padding-top: 180px;
 }
 .login {
     display: flex;
@@ -413,13 +418,24 @@ footer ul li a:hover {
     max-width: fit-content;
 }
 
-input {
+.login input {
+    color: #fff;
+    background: none;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 10px;
     margin-bottom: 10px;
     text-align: center;
+    padding: 5px;
 }
 
-input[type="submit"] {
-    padding: 2px 20px;
+.login input[type="submit"] {
+    padding: 10px 20px;
+}
+
+.login input[type="submit"]:hover {
+    color: #000;
+    background-color: #fff;
 }
 
 /* Animations */

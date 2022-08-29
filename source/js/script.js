@@ -62,12 +62,37 @@ function reset() {
 }
 
 form.addEventListener('submit', (e) => {
-    let username = document.getElementById('username').value;
-    let password = document.getElementById('password').value;
-    if (document.cookie === '') {
-        document.cookie = `user=${username}`;
-        document.cookie = "password=***********";
-        document.cookie = "admin=false";
-    }
     e.preventDefault();
+    let username = document.getElementById('username').value;
+    if (document.cookie === '') {
+        document.cookie = "admin=false";
+        document.cookie = `user=${username}`;
+        window.location = "denied.html" // Redirect
+    }
+    else {
+        let admin = getCookie("admin");
+        if (admin === "true") {
+            window.location = "panel.html"; // Redirect
+        }
+        else {
+            window.location = "denied.html" // Redirect
+        }
+    }
 });
+
+function getCookie(cookie) {
+    let name = cookie + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
