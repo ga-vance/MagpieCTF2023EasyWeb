@@ -16,4 +16,4 @@ We found an old website from Omni-Flags. We think there may be an insecure admin
 3. By checking the cookie, we can see that we have an admin cookie set to false. If the value is changed to 'true' the page will redirect to the flag.
 
 ## Flag
-magpie{bu7-7h3-m1Lk-ju57-fl04T5-A\/\/4y}
+magpie{bu7-7h3-m1Lk-ju57-fl04T5-4W4y!}

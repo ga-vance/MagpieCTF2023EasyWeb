@@ -1,7 +1,7 @@
 const solve = document.getElementById('correctly');
-const first = "bWFncGlle2J1Ny03aD" 
-const second = "MtbTFMay1qdTU3LWZs";
-const third = "MDRUNS1BXC9cLzR5fQ==";
+const first = "bWFncGlle2J1Ny03a" 
+const second = "DMtbTFMay1qdTU3LW";
+const third = "ZsMDRUNS00VzR5IX0=";
 
 function getCookie(cookie) {
     let name = cookie + "=";
