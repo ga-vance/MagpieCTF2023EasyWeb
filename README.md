@@ -4,7 +4,7 @@
 ### Author: Greg Vance (Expergefied)
 
 ## Description
-We found an old website from Omni-Flags. We think there may be an insecure admin portal somewhere. They never did hire the best developers. See if there is anything you can find!
+We found an old website from Omni-Flags. We think there may be an insecure admin portal somewhere. See if there is anything you can find! They never did hire the best developers.
 
 ## Hints
 1. Find the hidden Admin page. Beep Boop
